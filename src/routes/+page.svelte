@@ -1,2 +1,10 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+    import Cell from '$lib/components/Cell.svelte'
+
+</script>
+<!-- #8f3302 -->
+<div>
+    <h1>Word Hive</h1>
+    <Cell />
+
+</div>
