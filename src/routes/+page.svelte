@@ -4,12 +4,12 @@
   import { knuthShuffle } from 'knuth-shuffle'
 
   const positionMap: Record<number, string> = {
-    0: 'left-[28%] top-[30%]',
-    1: 'left-1/2 top-[20%] -translate-x-1/2',
-    2: 'right-[28%] top-[30%]',
-    3: 'right-[28%] bottom-[30%]',
-    4: 'left-1/2 bottom-[20%] -translate-x-1/2',
-    5: 'left-[28%] bottom-[30%]'
+    0: 'left-1/2 top-1/2  translate-x-1/4',
+    1: 'left-1/2 top-1/2 -translate-x-1/2 translate-y-1/2',
+    2: 'right-1/2 top-1/2 -translate-x-1/4',
+    3: 'right-1/2 bottom-1/2 -translate-x-1/4',
+    4: 'left-1/2 bottom-1/2 -translate-x-1/2 -translate-y-1/2',
+    5: 'left-1/2 bottom-1/2 translate-x-1/4'
   }
 
   const shuffleLetters = () => {
