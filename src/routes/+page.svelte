@@ -117,7 +117,7 @@
     bind:this={inputEl}
     bind:innerHTML={wordDisplay}
   />
-  <hive class="relative h-[50%] w-[50%]">
+  <hive class="relative h-50% w-50%">
     <Cell
       letter={centerLetter}
       center={true}
@@ -138,24 +138,23 @@
   </hive>
   <div class="flex space-x-10">
     <button
-      class="font-semibold bg-white rounded-full py-[12px] px-[12px]"
+      class="font-semibold bg-white rounded-full py-3 px-3"
       on:click={() => {
         removeLetter()
       }}>Delete</button
     >
     <ShuffleBtn on:click={shuffleLetters} />
-    <button
-      class="font-semibold bg-white rounded-full py-[12px] px-[12px]"
-      on:click={validateSubmission}>Enter</button
+    <button class="font-semibold bg-white rounded-full py-3 px-3" on:click={validateSubmission}
+      >Enter</button
     >
   </div>
 </div>
 <div
   class={cs(
-    'py-2 px-4 absolute bg-white/[.75] sm:bg-white/[.03] sm:h-[70%] sm:h-1/2 mt-10 top-[17%] sm:top-1/2 translate-y-0 sm:-translate-y-1/2 sm:border sm:border-gray-400 sm:w-[45%] sm:right-4 sm:left-auto left-16 right-16 overflow-y-hidden overflow-x-scroll rounded sm:text-white text-sm tracking-wide transition-[height]',
+    'py-2 px-4 absolute bg-white/[.75] sm:bg-white/[.03] sm:h-70% sm:h-1/2 mt-10 top-17% sm:top-1/2 translate-y-0 sm:-translate-y-1/2 sm:border sm:border-gray-400 sm:w-45% sm:right-4 sm:left-auto left-16 right-16 overflow-y-hidden overflow-x-scroll rounded sm:text-white text-sm tracking-wide transition-[height]',
     {
       'h-14': !wordDropdownOpen,
-      'h-[34rem]': wordDropdownOpen
+      'h-136': wordDropdownOpen
     }
   )}
 >
@@ -184,13 +183,13 @@
       </svg></button
     >
   </div>
-  <div class="h-[30rem]">
+  <div class="h-120">
     <p class={cs('sm:block w-full mb-2 whitespace-nowrap', !wordDropdownOpen && 'hidden')}>
       You have found {wordsFound.length} word{wordsFound.length === 1 ? '' : 's'}
     </p>
-    <div class="sm:hidden absolute top-0 w-full -ml-4 rounded z-[-1] h-full backdrop-blur-[2px]" />
+    <div class="sm:hidden absolute top-0 w-full -ml-4 rounded z-[-1] h-full backdrop-blur-xs" />
     <div
-      class={cs('sm:inline-flex h-[95%] flex-col flex-wrap', {
+      class={cs('sm:inline-flex h-95% flex-col flex-wrap', {
         'inline-flex': wordDropdownOpen,
         'hidden sm:inline-flex': !wordDropdownOpen
       })}

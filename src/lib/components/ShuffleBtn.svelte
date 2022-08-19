@@ -2,7 +2,7 @@
 
 -->
 
-<button class="font-semibold bg-white rounded-full py-[12px] px-[12px]" on:click>
+<button class="font-semibold bg-white rounded-full py-3 px-3" on:click>
   <svg
     baseProfile="tiny"
     height="24px"
