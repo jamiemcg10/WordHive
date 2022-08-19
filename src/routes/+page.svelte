@@ -144,8 +144,10 @@
 <div
   class="p-2 absolute bg-white/[.03] h-[50%] mt-10 top-1/2 -translate-y-1/2 border border-gray-400 w-[45%] right-4 rounded text-white text-sm tracking-wide"
 >
-  <p class="w-full">You have found {wordsFound.length} word{wordsFound.length === 1 ? '' : 's'}</p>
-  <div class="">
+  <p class="w-full mb-2">
+    You have found {wordsFound.length} word{wordsFound.length === 1 ? '' : 's'}
+  </p>
+  <div class="inline-flex h-[95%] flex-col flex-wrap">
     {#each wordsFound as wordFound}
       <span class="capitalize">{wordFound}</span>
     {/each}
