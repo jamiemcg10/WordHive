@@ -153,10 +153,10 @@
 </div>
 <div
   class={cs(
-    'py-2 px-4 absolute bg-white/[.75] sm:bg-white/[.03] sm:h-[70%] sm:h-1/2 mt-10 top-[17%] sm:top-1/2 translate-y-0 sm:-translate-y-1/2 sm:border sm:border-gray-400 sm:w-[45%] sm:right-4 sm:left-auto left-16 right-16 rounded sm:text-white text-sm tracking-wide transition-[height]',
+    'py-2 px-4 absolute bg-white/[.75] sm:bg-white/[.03] sm:h-[70%] sm:h-1/2 mt-10 top-[17%] sm:top-1/2 translate-y-0 sm:-translate-y-1/2 sm:border sm:border-gray-400 sm:w-[45%] sm:right-4 sm:left-auto left-16 right-16 overflow-hidden rounded sm:text-white text-sm tracking-wide transition-[height]',
     {
       'h-14': !wordDropdownOpen,
-      'h-[70%]': wordDropdownOpen
+      'h-[34rem]': wordDropdownOpen
     }
   )}
 >
@@ -185,7 +185,7 @@
       </svg></button
     >
   </div>
-  <div class="h-[95%]">
+  <div class="h-[30rem]">
     <p class={cs('sm:block w-full mb-2', !wordDropdownOpen && 'hidden')}>
       You have found {wordsFound.length} word{wordsFound.length === 1 ? '' : 's'}
     </p>
