@@ -3,9 +3,9 @@ module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     fontFamily: {
-      'sans': 'Helvetica, Arial, sans-serif',
+      sans: 'Helvetica, Arial, sans-serif'
     },
-    extend: {},
+    extend: {}
   },
-  plugins: [],
+  plugins: []
 }
