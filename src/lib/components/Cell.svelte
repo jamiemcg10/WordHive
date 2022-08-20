@@ -6,7 +6,7 @@
   export let center = false
 </script>
 
-<div class="absolute inline-block w-[4.69rem] cursor-pointer {position}" on:click>
+<div class="absolute inline-block w-20 cursor-pointer {position}" on:click>
   {#key letter}
     <p
       class="cursor-pointer font-extrabold uppercase text-2xl absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
@@ -18,7 +18,7 @@
     <path
       class={cs({
         'text-yellow-400': center,
-        'text-white': !center
+        'text-gray-100': !center
       })}
       d="M 89.516 65.242 L 114.516 78.992 L 114.516 106.492 L 89.516 120.242 L 64.516 106.492 L 64.516 78.992 Z"
       data-bx-shape="n-gon 89.516 92.742 28.868 27.5 6 0 1@70e67742"

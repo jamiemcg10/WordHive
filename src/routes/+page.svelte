@@ -8,7 +8,9 @@
   let wordDropdownOpen = false
 </script>
 
-<h1 class="text-white font-bold text-4xl h-fit left-1/2 -translate-x-1/2 mt-12 absolute">
+<h1
+  class="text-gray-100 font-bold tracking-wider text-4xl h-fit left-1/2 -translate-x-1/2 mt-12 absolute whitespace-nowrap drop-shadow-md"
+>
   Word Hive
 </h1>
 

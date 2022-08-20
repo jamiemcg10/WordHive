@@ -7,10 +7,11 @@
     shuffle: void
     submit: void
   }>()
-  const sharedBtnClasses = 'font-semibold bg-white rounded-full py-3 px-3'
+  const sharedBtnClasses =
+    'font-semibold bg-gray-100 rounded-full tracking-wider py-3 px-3 drop-shadow-md'
 </script>
 
-<div class="flex space-x-10">
+<div class="flex xs:space-x-10 space-x-6">
   <button
     class={sharedBtnClasses}
     on:click={() => {

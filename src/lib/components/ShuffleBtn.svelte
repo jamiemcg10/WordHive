@@ -2,7 +2,7 @@
 
 -->
 
-<button class="font-semibold bg-white rounded-full py-3 px-3" on:click>
+<button class="font-semibold bg-gray-100 rounded-full py-3 px-3 drop-shadow-md" on:click>
   <svg
     baseProfile="tiny"
     height="24px"

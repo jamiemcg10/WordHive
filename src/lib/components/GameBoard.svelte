@@ -4,6 +4,7 @@
   import Cell from '$lib/components/Cell.svelte'
   import { knuthShuffle } from 'knuth-shuffle'
   import { onMount } from 'svelte'
+  import cs from 'clsx'
 
   export let centerLetter: string
   export let surroundingLetters: string[]
@@ -95,7 +96,11 @@
   }} />
 
 <div
-  class="inline-flex flex-col w-full sm:w-1/2 justify-center items-center relative h-screen pt-[110px] sm:p-0"
+  class={cs(
+    'inline-flex flex-col justify-center items-center relative h-screen pt-[110px]',
+    'desktop:w-1/2 desktop:p-0',
+    'w-full'
+  )}
 >
   <div
     on:keydown|preventDefault={() => {}}
@@ -103,7 +108,7 @@
     on:blur={() => {
       moveCursorToEnd()
     }}
-    class="relative h-[32px] text-white top-0 translate-y-full font-semibold text-2xl uppercase focus:outline-none caret-yellow-400"
+    class="relative h-8 text-gray-100 top-0 translate-y-full font-semibold text-2xl uppercase focus:outline-none caret-yellow-400"
     contenteditable="true"
     bind:this={inputEl}
     bind:innerHTML={wordDisplay}
